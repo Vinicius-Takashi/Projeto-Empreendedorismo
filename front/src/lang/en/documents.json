@@ -1,0 +1,55 @@
+{
+  "views": {
+    "upload": {
+      "label": "Upload",
+      "title": "Upload bills"
+    },
+    "building": {
+      "label": "Building",
+      "title": "Building bills"
+    },
+    "residency": {
+      "label": "Residency",
+      "title": "My bills"
+    }
+  },
+  "upload": {
+    "referenceMonth": "Reference month",
+    "zipFile": "ZIP file",
+    "submitting": "Uploading...",
+    "submit": "Upload bills",
+    "errorsTitle": "Files with errors",
+    "summary": {
+      "status": "Status",
+      "total": "Total",
+      "processed": "Processed",
+      "failed": "Failed"
+    },
+    "toast": {
+      "required": "Select the reference month and a ZIP file.",
+      "successTitle": "Upload processed",
+      "success": "The bills were processed.",
+      "error": "Could not process the ZIP file."
+    }
+  },
+  "list": {
+    "empty": "No bills found.",
+    "refresh": "Refresh",
+    "updating": "Refreshing...",
+    "download": "Download",
+    "downloading": "Opening...",
+    "toast": {
+      "listError": "Could not list the bills.",
+      "downloadError": "Could not create the download link."
+    }
+  },
+  "table": {
+    "residency": "Residency",
+    "referenceMonth": "Month",
+    "file": "File",
+    "size": "Size",
+    "version": "Version",
+    "createdAt": "Uploaded at",
+    "action": "Action"
+  }
+}

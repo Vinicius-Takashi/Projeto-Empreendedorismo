@@ -1,0 +1,55 @@
+{
+  "views": {
+    "upload": {
+      "label": "Enviar",
+      "title": "Enviar boletas"
+    },
+    "building": {
+      "label": "Edificio",
+      "title": "Boletas del edificio"
+    },
+    "residency": {
+      "label": "Residencia",
+      "title": "Mis boletas"
+    }
+  },
+  "upload": {
+    "referenceMonth": "Mes de referencia",
+    "zipFile": "Archivo ZIP",
+    "submitting": "Enviando...",
+    "submit": "Enviar boletas",
+    "errorsTitle": "Archivos con error",
+    "summary": {
+      "status": "Estado",
+      "total": "Total",
+      "processed": "Procesados",
+      "failed": "Fallos"
+    },
+    "toast": {
+      "required": "Selecciona el mes de referencia y un ZIP.",
+      "successTitle": "Carga procesada",
+      "success": "Las boletas fueron procesadas.",
+      "error": "No fue posible procesar el ZIP."
+    }
+  },
+  "list": {
+    "empty": "No se encontraron boletas.",
+    "refresh": "Actualizar",
+    "updating": "Actualizando...",
+    "download": "Descargar",
+    "downloading": "Abriendo...",
+    "toast": {
+      "listError": "No fue posible listar las boletas.",
+      "downloadError": "No fue posible crear el enlace de descarga."
+    }
+  },
+  "table": {
+    "residency": "Residencia",
+    "referenceMonth": "Mes",
+    "file": "Archivo",
+    "size": "Tamano",
+    "version": "Version",
+    "createdAt": "Enviado en",
+    "action": "Accion"
+  }
+}

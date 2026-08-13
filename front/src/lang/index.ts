@@ -15,6 +15,7 @@ i18n.use(initReactI18next).init({
     'calendar',
     'packages',
     'visitorAccess',
+    'documents',
     'common',
   ],
   defaultNS: 'shell',
