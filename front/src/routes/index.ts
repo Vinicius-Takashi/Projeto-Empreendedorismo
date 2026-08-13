@@ -5,6 +5,7 @@ import {
   UserRound,
   Settings as SettingsIcon,
   PackageIcon,
+  FileText,
 } from 'lucide-react';
 import Home from '../views/Home';
 import Residents from '../views/Residents';
@@ -14,6 +15,7 @@ import Settings from '../views/Settings';
 import Packages from '../views/Packages';
 import VisitorAccess from '../views/VisitorAccess';
 import BuildingSelector from '../views/BuildingSelector.tsx';
+import Documents from '../views/Documents';
 import type { RouteConfig } from './route';
 
 const routes: RouteConfig[] = [
@@ -62,6 +64,17 @@ const routes: RouteConfig[] = [
     display: {
       labelKey: 'sidebar.routes.packages',
       icon: PackageIcon,
+    },
+  },
+  {
+    path: '/documents',
+    viewComponent: Documents,
+    layout: 'sidebar',
+    visible: true,
+    permissions: ['@file:upload', '@file:view:residency'],
+    display: {
+      labelKey: 'sidebar.routes.documents',
+      icon: FileText,
     },
   },
   {

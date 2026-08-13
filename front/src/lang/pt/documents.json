@@ -1,0 +1,55 @@
+{
+  "views": {
+    "upload": {
+      "label": "Enviar",
+      "title": "Enviar boletos"
+    },
+    "building": {
+      "label": "Predio",
+      "title": "Boletos do predio"
+    },
+    "residency": {
+      "label": "Residencia",
+      "title": "Meus boletos"
+    }
+  },
+  "upload": {
+    "referenceMonth": "Mes de referencia",
+    "zipFile": "Arquivo ZIP",
+    "submitting": "Enviando...",
+    "submit": "Enviar boletos",
+    "errorsTitle": "Arquivos com erro",
+    "summary": {
+      "status": "Status",
+      "total": "Total",
+      "processed": "Processados",
+      "failed": "Falhas"
+    },
+    "toast": {
+      "required": "Informe o mes de referencia e selecione um ZIP.",
+      "successTitle": "Upload processado",
+      "success": "Os boletos foram processados.",
+      "error": "Nao foi possivel processar o ZIP."
+    }
+  },
+  "list": {
+    "empty": "Nenhum boleto encontrado.",
+    "refresh": "Atualizar",
+    "updating": "Atualizando...",
+    "download": "Baixar",
+    "downloading": "Abrindo...",
+    "toast": {
+      "listError": "Nao foi possivel listar os boletos.",
+      "downloadError": "Nao foi possivel gerar o link de download."
+    }
+  },
+  "table": {
+    "residency": "Residencia",
+    "referenceMonth": "Mes",
+    "file": "Arquivo",
+    "size": "Tamanho",
+    "version": "Versao",
+    "createdAt": "Enviado em",
+    "action": "Acao"
+  }
+}

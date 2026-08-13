@@ -5,6 +5,7 @@ interface AppConfig {
   reservationUrl: string;
   visitorAccessUrl: string;
   communicationUrl: string;
+  fileUrl: string;
 }
 
 const config: AppConfig = {
@@ -14,6 +15,7 @@ const config: AppConfig = {
   reservationUrl: 'http://localhost:8005',
   visitorAccessUrl: 'http://localhost:8003',
   communicationUrl: 'http://localhost:8006',
+  fileUrl: 'http://localhost:8007',
 };
 
 export default config;

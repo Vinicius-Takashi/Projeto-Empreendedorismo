@@ -18,3 +18,8 @@ export const VisitorCreatePermission = '@visitor:create';
 export const ReservationCreatePermission = '@reservation:create';
 export const ReservationViewResidencyPermission = '@reservation:view:residency';
 export const ReservationViewBuildingPermission = '@reservation:view:building';
+
+// File Service
+export const FileUploadPermission = '@file:upload';
+export const FileViewBuildingPermission = '@file:view:building';
+export const FileViewResidencyPermission = '@file:view:residency';

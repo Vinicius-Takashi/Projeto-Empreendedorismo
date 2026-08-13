@@ -6,6 +6,7 @@ import calendar from './calendar.json';
 import common from './common.json';
 import packages from './packages.json';
 import visitorAccess from './visitorAccess.json';
+import documents from './documents.json';
 
 export default {
   login,
@@ -17,6 +18,7 @@ export default {
   calendar,
   packages,
   visitorAccess,
+  documents,
 
   common,
 };
