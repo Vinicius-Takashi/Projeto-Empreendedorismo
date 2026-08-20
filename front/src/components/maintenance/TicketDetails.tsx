@@ -63,7 +63,9 @@ export default function TicketDetails({
   const canInternalComment = hasPermission([maintenancePermissions.internalComment]);
   const currentUserId = localStorage.getItem('userId');
   const personName = (userId: string) =>
-    userId === currentUserId ? t('maintenance:details.you') : people[userId] || userId.slice(0, 8);
+    userId === currentUserId
+      ? t('maintenance:details.you')
+      : people[userId] || t('maintenance:details.buildingTeam');
 
   async function handleComment(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
