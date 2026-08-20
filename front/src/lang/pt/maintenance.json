@@ -35,6 +35,7 @@
   "details": {
     "select": "Selecione um chamado para consultar os detalhes.",
     "unassigned": "Não atribuído",
+    "buildingTeam": "Equipe do condomínio",
     "you": "Você"
   },
   "comments": {

@@ -32,6 +32,7 @@
   "details": {
     "select": "Select a request to view its details.",
     "unassigned": "Unassigned",
+    "buildingTeam": "Building staff",
     "you": "You"
   },
   "comments": {

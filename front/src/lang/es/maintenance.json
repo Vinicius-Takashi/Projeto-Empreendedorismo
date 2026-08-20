@@ -32,6 +32,7 @@
   "details": {
     "select": "Seleccione una solicitud para ver los detalles.",
     "unassigned": "Sin asignar",
+    "buildingTeam": "Equipo del condominio",
     "you": "Usted"
   },
   "comments": {
