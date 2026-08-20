@@ -1,5 +1,5 @@
 import client from '@app/db/client';
-import { residencyFiles } from '@app/db/schema/file';
+import { residencyFiles, serviceFiles } from '@app/db/schema/file';
 import {
   FILE_VIEW_BUILDING_PERMISSION,
   FILE_VIEW_RESIDENCY_PERMISSION,
@@ -20,21 +20,30 @@ export default async function getDownloadUrl(req: Request, ctx: Context) {
     throw BadRequest;
   }
 
-  const [file] = await client
+  const [residencyFile] = await client
     .select()
     .from(residencyFiles)
     .where(and(eq(residencyFiles.id, fileId), eq(residencyFiles.buildingId, ctx.auth.buildingId)));
 
-  if (!file) {
-    throw NotFoundError;
-  }
+  const [serviceFile] = residencyFile
+    ? []
+    : await client
+        .select()
+        .from(serviceFiles)
+        .where(and(eq(serviceFiles.id, fileId), eq(serviceFiles.buildingId, ctx.auth.buildingId)));
+
+  const file = residencyFile ?? serviceFile;
+  if (!file) throw NotFoundError;
 
   if (hasPermission(ctx, FILE_VIEW_BUILDING_PERMISSION)) {
     requirePermission(ctx, [FILE_VIEW_BUILDING_PERMISSION]);
   } else {
     requirePermission(ctx, [FILE_VIEW_RESIDENCY_PERMISSION]);
 
-    if (!ctx.auth.residencyId || ctx.auth.residencyId !== file.residencyId) {
+    if (
+      file.residencyId !== null &&
+      (!ctx.auth.residencyId || ctx.auth.residencyId !== file.residencyId)
+    ) {
       throw Unauthorized;
     }
   }

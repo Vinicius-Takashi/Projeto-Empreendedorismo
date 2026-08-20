@@ -6,6 +6,7 @@ import {
   pgTable,
   text,
   timestamp,
+  uniqueIndex,
   uuid,
   varchar,
 } from 'drizzle-orm/pg-core';
@@ -17,7 +18,7 @@ export const fileBatchStatusEnum = pgEnum('file_batch_status', [
   'FAILED',
 ]);
 
-export const fileTypeEnum = pgEnum('file_type', ['BOLETO']);
+export const fileTypeEnum = pgEnum('file_type', ['BOLETO', 'MAINTENANCE_ATTACHMENT']);
 
 export const fileBatches = pgTable('file_batches', {
   id: uuid('id').primaryKey().defaultRandom(),
@@ -58,9 +59,31 @@ export const fileBatchErrors = pgTable('file_batch_errors', {
   createdAt: timestamp('created_at').defaultNow().notNull(),
 });
 
+export const serviceFiles = pgTable(
+  'service_files',
+  {
+    id: uuid('id').primaryKey().defaultRandom(),
+    buildingId: uuid('building_id').notNull(),
+    residencyId: uuid('residency_id'),
+    uploadedByUserId: uuid('uploaded_by_user_id').notNull(),
+    type: fileTypeEnum('type').notNull(),
+    ownerType: varchar('owner_type', { length: 80 }).notNull(),
+    ownerId: uuid('owner_id').notNull(),
+    attachmentType: varchar('attachment_type', { length: 40 }).default('OTHER').notNull(),
+    originalName: varchar('original_name', { length: 255 }).notNull(),
+    objectKey: text('object_key').notNull(),
+    sizeBytes: integer('size_bytes').notNull(),
+    contentType: varchar('content_type', { length: 100 }).notNull(),
+    createdAt: timestamp('created_at').defaultNow().notNull(),
+  },
+  (table) => [uniqueIndex('service_files_object_key_idx').on(table.objectKey)],
+);
+
 export type FileBatch = InferSelectModel<typeof fileBatches>;
 export type FileBatchInsert = InferInsertModel<typeof fileBatches>;
 export type ResidencyFile = InferSelectModel<typeof residencyFiles>;
 export type ResidencyFileInsert = InferInsertModel<typeof residencyFiles>;
 export type FileBatchError = InferSelectModel<typeof fileBatchErrors>;
 export type FileBatchErrorInsert = InferInsertModel<typeof fileBatchErrors>;
+export type ServiceFile = InferSelectModel<typeof serviceFiles>;
+export type ServiceFileInsert = InferInsertModel<typeof serviceFiles>;

@@ -18,6 +18,8 @@ opts=(
   "visitor-service"
   "reservation-service"
   "event-bus"
+  "file-service"
+  "maintenance-service"
 )
 
 chosen=$(gum choose --no-limit "${opts[@]}")

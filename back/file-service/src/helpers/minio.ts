@@ -18,9 +18,13 @@ export async function ensureBucket() {
 }
 
 export async function uploadPdf(objectKey: string, buffer: Buffer) {
+  await uploadFile(objectKey, buffer, 'application/pdf');
+}
+
+export async function uploadFile(objectKey: string, buffer: Buffer, contentType: string) {
   await ensureBucket();
   await minioClient.putObject(config.minioBucket, objectKey, buffer, buffer.length, {
-    'Content-Type': 'application/pdf',
+    'Content-Type': contentType,
   });
 }
 

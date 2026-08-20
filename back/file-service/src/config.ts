@@ -3,6 +3,7 @@ interface AppConfig {
   dbConnectionString: string;
   jwtSecret: string;
   coreServiceUrl: string;
+  eventBusUrl: string;
   minioEndpoint: string;
   minioPort: number;
   minioUseSSL: boolean;
@@ -17,6 +18,7 @@ const config: AppConfig = {
   dbConnectionString: 'postgresql://admin:adminPasswd@localhost:5432/fileDb',
   jwtSecret: 'test-token',
   coreServiceUrl: 'http://localhost:8000',
+  eventBusUrl: 'http://localhost:8004',
   minioEndpoint: 'localhost',
   minioPort: 9090,
   minioUseSSL: false,

@@ -6,6 +6,7 @@ interface AppConfig {
   visitorAccessUrl: string;
   communicationUrl: string;
   fileUrl: string;
+  maintenanceUrl: string;
 }
 
 const config: AppConfig = {
@@ -16,6 +17,7 @@ const config: AppConfig = {
   visitorAccessUrl: 'http://localhost:8003',
   communicationUrl: 'http://localhost:8006',
   fileUrl: 'http://localhost:8007',
+  maintenanceUrl: 'http://localhost:8008',
 };
 
 export default config;

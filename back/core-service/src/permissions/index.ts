@@ -23,3 +23,11 @@ export const ReservationViewBuildingPermission = '@reservation:view:building';
 export const FileUploadPermission = '@file:upload';
 export const FileViewBuildingPermission = '@file:view:building';
 export const FileViewResidencyPermission = '@file:view:residency';
+
+// Maintenance Service
+export const MaintenanceViewBuildingPermission = '@maintenance:ticket:view:building';
+export const MaintenanceViewResidencyPermission = '@maintenance:ticket:view:residency';
+export const MaintenanceTriagePermission = '@maintenance:ticket:triage';
+export const MaintenanceWorkPermission = '@maintenance:ticket:work';
+export const MaintenanceClosePermission = '@maintenance:ticket:close';
+export const MaintenanceInternalCommentPermission = '@maintenance:ticket:comment:internal';

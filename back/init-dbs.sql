@@ -5,3 +5,4 @@ CREATE DATABASE "reservationDb";
 CREATE DATABASE "communicationDb";
 CREATE DATABASE "visitorDb";
 CREATE DATABASE "fileDb";
+CREATE DATABASE "maintenanceDb";

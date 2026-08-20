@@ -1,0 +1,132 @@
+{
+  "title": "Maintenance requests",
+  "subtitle": "Track requests, assignees, and deadlines for the building.",
+  "views": { "tickets": "Requests", "create": "Open request" },
+  "fields": {
+    "category": "Category",
+    "title": "Title",
+    "description": "Description",
+    "location": "Location",
+    "residency": "Unit",
+    "assignee": "Assignee",
+    "createdAt": "Opened at",
+    "dueAt": "Due date",
+    "resolution": "Resolution"
+  },
+  "create": {
+    "title": "Describe the issue",
+    "description": "Provide enough detail for the team to assess and handle the request.",
+    "titlePlaceholder": "E.g. Kitchen sink leak",
+    "descriptionPlaceholder": "Tell us when the issue started and how it affects the location.",
+    "locationPlaceholder": "E.g. Kitchen, second-floor hallway",
+    "attachment": "Optional photo or document",
+    "submitting": "Opening request...",
+    "submit": "Open request"
+  },
+  "list": {
+    "filter": "Filter requests by status",
+    "allStatuses": "All statuses",
+    "empty": "No requests found.",
+    "residency": "Residential unit"
+  },
+  "details": {
+    "select": "Select a request to view its details.",
+    "unassigned": "Unassigned",
+    "you": "You"
+  },
+  "comments": {
+    "title": "Comments",
+    "empty": "There are no comments yet.",
+    "placeholder": "Add an update to the request...",
+    "internal": "Internal comment",
+    "internalOption": "Visible to staff only",
+    "submit": "Comment",
+    "required": "Enter a comment before submitting."
+  },
+  "attachments": {
+    "title": "Attachments",
+    "empty": "No attachments available.",
+    "submit": "Attach",
+    "required": "Select a file before submitting."
+  },
+  "history": { "title": "History" },
+  "actions": {
+    "title": "Manage request",
+    "triage": "Complete triage",
+    "selectAssignee": "Select an assignee",
+    "assign": "Assign",
+    "start": "Start work",
+    "wait": "Put on hold",
+    "resolutionPlaceholder": "Describe the applied resolution",
+    "resolve": "Mark as resolved",
+    "close": "Close request",
+    "reopen": "Reopen request",
+    "cancel": "Cancel request",
+    "rejectPlaceholder": "Reason for rejection",
+    "reject": "Reject request"
+  },
+  "status": {
+    "OPEN": "Open",
+    "UNDER_REVIEW": "Under review",
+    "IN_PROGRESS": "In progress",
+    "WAITING_RESIDENT": "Waiting for resident",
+    "WAITING_VENDOR": "Waiting for vendor",
+    "WAITING_MATERIAL": "Waiting for material",
+    "RESOLVED": "Resolved",
+    "CLOSED": "Closed",
+    "REJECTED": "Rejected",
+    "CANCELED": "Canceled"
+  },
+  "priority": { "LOW": "Low", "NORMAL": "Normal", "HIGH": "High", "EMERGENCY": "Emergency" },
+  "category": {
+    "PLUMBING": "Plumbing",
+    "ELECTRICAL": "Electrical",
+    "ELEVATOR": "Elevator",
+    "CLEANING": "Cleaning",
+    "SECURITY": "Security",
+    "COMMON_AREA": "Common area",
+    "STRUCTURAL": "Structural",
+    "OTHER": "Other"
+  },
+  "attachmentType": {
+    "PROBLEM_PHOTO": "Issue photo",
+    "RESOLUTION_PHOTO": "Resolution photo",
+    "INVOICE": "Invoice",
+    "REPORT": "Report",
+    "OTHER": "Other"
+  },
+  "event": {
+    "TICKET_CREATED": "Request opened",
+    "TICKET_TRIAGED": "Triage completed",
+    "TICKET_ASSIGNED": "Assignee selected",
+    "TICKET_STARTED": "Work started",
+    "TICKET_WAITING": "Request put on hold",
+    "TICKET_RESOLVED": "Request resolved",
+    "TICKET_CLOSED": "Request closed",
+    "TICKET_REOPENED": "Request reopened",
+    "TICKET_CANCELED": "Request canceled",
+    "TICKET_REJECTED": "Request rejected",
+    "COMMENT_ADDED": "Comment added",
+    "INTERNAL_COMMENT_ADDED": "Internal comment added",
+    "ATTACHMENT_ADDED": "Attachment added"
+  },
+  "toast": {
+    "requiredTitle": "Check the information",
+    "requiredMessage": "Enter a title and description with at least three characters.",
+    "createdTitle": "Request opened",
+    "createdMessage": "The request was registered successfully.",
+    "createError": "The request could not be opened.",
+    "listError": "The requests could not be loaded.",
+    "detailsError": "The request details could not be loaded.",
+    "commentTitle": "Comment added",
+    "commentMessage": "The update was registered.",
+    "commentError": "The comment could not be added.",
+    "fileTitle": "File attached",
+    "fileMessage": "The attachment was uploaded to the request.",
+    "fileError": "The attachment could not be uploaded.",
+    "downloadError": "The attachment could not be opened.",
+    "updatedTitle": "Request updated",
+    "updatedMessage": "The request status was updated.",
+    "actionError": "The action could not be completed. Check the request status."
+  }
+}
