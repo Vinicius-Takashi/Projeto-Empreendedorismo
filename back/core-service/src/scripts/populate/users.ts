@@ -2,22 +2,51 @@ import { UserInsert } from '@app/db/schema';
 import { ids } from './ids';
 import {
   AdminPermission,
-  ReservationViewResidencyPermission,
-  ReservationCreatePermission,
-  UserManagePermission,
-  ReservationViewBuildingPermission,
-  DeliveryViewPermission,
+  CommunicationManagePermission,
+  DeliveryCreatePermission,
   DeliveryListPermission,
-  VisitorCreatePermission,
+  DeliveryViewPermission,
+  FileUploadPermission,
+  FileViewBuildingPermission,
   FileViewResidencyPermission,
+  MaintenanceClosePermission,
+  MaintenanceInternalCommentPermission,
+  MaintenanceTriagePermission,
+  MaintenanceViewBuildingPermission,
+  MaintenanceViewResidencyPermission,
+  MaintenanceWorkPermission,
+  ReservationCreatePermission,
+  ReservationViewBuildingPermission,
+  ReservationViewResidencyPermission,
+  UserManagePermission,
+  VisitorCreatePermission,
+  VisitorViewPermission,
 } from '@app/permissions';
 
-const commonUserPermissions = [
+const residentPermissions = [
   ReservationCreatePermission,
   ReservationViewResidencyPermission,
   DeliveryViewPermission,
   VisitorCreatePermission,
   FileViewResidencyPermission,
+  MaintenanceViewResidencyPermission,
+];
+
+const employeePermissions = [
+  UserManagePermission,
+  CommunicationManagePermission,
+  ReservationViewBuildingPermission,
+  DeliveryCreatePermission,
+  DeliveryListPermission,
+  VisitorCreatePermission,
+  VisitorViewPermission,
+  FileUploadPermission,
+  FileViewBuildingPermission,
+  MaintenanceViewBuildingPermission,
+  MaintenanceTriagePermission,
+  MaintenanceWorkPermission,
+  MaintenanceClosePermission,
+  MaintenanceInternalCommentPermission,
 ];
 
 export const userData: UserInsert[] = [
@@ -27,64 +56,45 @@ export const userData: UserInsert[] = [
     residencyId: ids.residencies.ap101,
     buildingId: ids.buildings.jardim,
     name: 'João Silva',
-    permissions: commonUserPermissions,
+    permissions: residentPermissions,
     active: true,
   },
-
   {
     id: ids.users.maria,
     accountId: ids.accounts.maria,
     residencyId: ids.residencies.ap102,
     buildingId: ids.buildings.jardim,
     name: 'Maria Silva',
-    permissions: commonUserPermissions,
+    permissions: residentPermissions,
     active: true,
   },
-
-  // mesma conta em dois condomínios
-
   {
     id: ids.users.carlos,
-    accountId: ids.accounts.carlos,
-    residencyId: ids.residencies.ap201,
-    buildingId: ids.buildings.jardim,
-    name: 'Carlos Souza',
-    permissions: commonUserPermissions,
-    active: true,
-  },
-
-  {
-    id: ids.users.carlos2,
     accountId: ids.accounts.carlos,
     residencyId: ids.residencies.casa01,
     buildingId: ids.buildings.bosque,
     name: 'Carlos Souza',
-    permissions: commonUserPermissions,
+    permissions: residentPermissions,
     active: true,
   },
-
-  // funcionários
-
+  {
+    id: ids.users.beatriz,
+    accountId: ids.accounts.beatriz,
+    residencyId: ids.residencies.casa02,
+    buildingId: ids.buildings.bosque,
+    name: 'Beatriz Lima',
+    permissions: residentPermissions,
+    active: true,
+  },
   {
     id: ids.users.ana,
     accountId: ids.accounts.ana,
     residencyId: null,
     buildingId: ids.buildings.jardim,
     name: 'Ana Recepção',
-    permissions: [UserManagePermission, ReservationViewBuildingPermission, DeliveryListPermission],
+    permissions: employeePermissions,
     active: true,
   },
-
-  {
-    id: ids.users.pedro,
-    accountId: ids.accounts.pedro,
-    residencyId: null,
-    buildingId: ids.buildings.jardim,
-    name: 'Pedro Zelador',
-    permissions: [],
-    active: true,
-  },
-
   {
     id: ids.users.fernanda,
     accountId: ids.accounts.fernanda,
@@ -94,13 +104,21 @@ export const userData: UserInsert[] = [
     permissions: [AdminPermission],
     active: true,
   },
-
   {
-    id: ids.users.fernanda2,
-    accountId: ids.accounts.fernanda,
+    id: ids.users.rafael,
+    accountId: ids.accounts.rafael,
     residencyId: null,
     buildingId: ids.buildings.bosque,
-    name: 'Fernanda Síndica',
+    name: 'Rafael Portaria',
+    permissions: employeePermissions,
+    active: true,
+  },
+  {
+    id: ids.users.luciana,
+    accountId: ids.accounts.luciana,
+    residencyId: null,
+    buildingId: ids.buildings.bosque,
+    name: 'Luciana Síndica',
     permissions: [AdminPermission],
     active: true,
   },

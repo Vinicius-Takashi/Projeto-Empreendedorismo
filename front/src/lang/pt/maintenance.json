@@ -1,0 +1,142 @@
+{
+  "title": "Chamados de manutenção",
+  "subtitle": "Acompanhe solicitações, responsáveis e prazos do condomínio.",
+  "views": {
+    "tickets": "Chamados",
+    "create": "Abrir chamado"
+  },
+  "fields": {
+    "category": "Categoria",
+    "title": "Título",
+    "description": "Descrição",
+    "location": "Local",
+    "residency": "Unidade",
+    "assignee": "Responsável",
+    "createdAt": "Aberto em",
+    "dueAt": "Prazo",
+    "resolution": "Solução"
+  },
+  "create": {
+    "title": "Descreva o problema",
+    "description": "Informe detalhes suficientes para a equipe avaliar e atender o chamado.",
+    "titlePlaceholder": "Ex.: Vazamento na pia da cozinha",
+    "descriptionPlaceholder": "Conte quando o problema começou e como ele afeta o local.",
+    "locationPlaceholder": "Ex.: Cozinha, corredor do 2º andar",
+    "attachment": "Foto ou documento opcional",
+    "submitting": "Abrindo chamado...",
+    "submit": "Abrir chamado"
+  },
+  "list": {
+    "filter": "Filtrar chamados por status",
+    "allStatuses": "Todos os status",
+    "empty": "Nenhum chamado encontrado.",
+    "residency": "Unidade residencial"
+  },
+  "details": {
+    "select": "Selecione um chamado para consultar os detalhes.",
+    "unassigned": "Não atribuído",
+    "you": "Você"
+  },
+  "comments": {
+    "title": "Comentários",
+    "empty": "Ainda não há comentários.",
+    "placeholder": "Adicione uma atualização ao chamado...",
+    "internal": "Comentário interno",
+    "internalOption": "Visível apenas para a equipe",
+    "submit": "Comentar",
+    "required": "Digite um comentário antes de enviar."
+  },
+  "attachments": {
+    "title": "Anexos",
+    "empty": "Nenhum anexo disponível.",
+    "submit": "Anexar",
+    "required": "Selecione um arquivo antes de enviar."
+  },
+  "history": {
+    "title": "Histórico"
+  },
+  "actions": {
+    "title": "Gerenciar chamado",
+    "triage": "Concluir triagem",
+    "selectAssignee": "Selecione o responsável",
+    "assign": "Atribuir",
+    "start": "Iniciar atendimento",
+    "wait": "Colocar em espera",
+    "resolutionPlaceholder": "Descreva a solução aplicada",
+    "resolve": "Marcar como resolvido",
+    "close": "Encerrar chamado",
+    "reopen": "Reabrir chamado",
+    "cancel": "Cancelar chamado",
+    "rejectPlaceholder": "Motivo da rejeição",
+    "reject": "Rejeitar chamado"
+  },
+  "status": {
+    "OPEN": "Aberto",
+    "UNDER_REVIEW": "Em triagem",
+    "IN_PROGRESS": "Em atendimento",
+    "WAITING_RESIDENT": "Aguardando morador",
+    "WAITING_VENDOR": "Aguardando fornecedor",
+    "WAITING_MATERIAL": "Aguardando material",
+    "RESOLVED": "Resolvido",
+    "CLOSED": "Encerrado",
+    "REJECTED": "Rejeitado",
+    "CANCELED": "Cancelado"
+  },
+  "priority": {
+    "LOW": "Baixa",
+    "NORMAL": "Normal",
+    "HIGH": "Alta",
+    "EMERGENCY": "Emergência"
+  },
+  "category": {
+    "PLUMBING": "Hidráulica",
+    "ELECTRICAL": "Elétrica",
+    "ELEVATOR": "Elevador",
+    "CLEANING": "Limpeza",
+    "SECURITY": "Segurança",
+    "COMMON_AREA": "Área comum",
+    "STRUCTURAL": "Estrutural",
+    "OTHER": "Outro"
+  },
+  "attachmentType": {
+    "PROBLEM_PHOTO": "Foto do problema",
+    "RESOLUTION_PHOTO": "Foto da solução",
+    "INVOICE": "Nota fiscal",
+    "REPORT": "Relatório",
+    "OTHER": "Outro"
+  },
+  "event": {
+    "TICKET_CREATED": "Chamado aberto",
+    "TICKET_TRIAGED": "Triagem concluída",
+    "TICKET_ASSIGNED": "Responsável atribuído",
+    "TICKET_STARTED": "Atendimento iniciado",
+    "TICKET_WAITING": "Chamado colocado em espera",
+    "TICKET_RESOLVED": "Chamado resolvido",
+    "TICKET_CLOSED": "Chamado encerrado",
+    "TICKET_REOPENED": "Chamado reaberto",
+    "TICKET_CANCELED": "Chamado cancelado",
+    "TICKET_REJECTED": "Chamado rejeitado",
+    "COMMENT_ADDED": "Comentário adicionado",
+    "INTERNAL_COMMENT_ADDED": "Comentário interno adicionado",
+    "ATTACHMENT_ADDED": "Anexo adicionado"
+  },
+  "toast": {
+    "requiredTitle": "Verifique os dados",
+    "requiredMessage": "Informe um título e uma descrição com pelo menos três caracteres.",
+    "createdTitle": "Chamado aberto",
+    "createdMessage": "A solicitação foi registrada com sucesso.",
+    "createError": "Não foi possível abrir o chamado.",
+    "listError": "Não foi possível carregar os chamados.",
+    "detailsError": "Não foi possível carregar os detalhes do chamado.",
+    "commentTitle": "Comentário adicionado",
+    "commentMessage": "A atualização foi registrada.",
+    "commentError": "Não foi possível adicionar o comentário.",
+    "fileTitle": "Arquivo anexado",
+    "fileMessage": "O anexo foi enviado para o chamado.",
+    "fileError": "Não foi possível enviar o anexo.",
+    "downloadError": "Não foi possível abrir o anexo.",
+    "updatedTitle": "Chamado atualizado",
+    "updatedMessage": "A situação do chamado foi atualizada.",
+    "actionError": "Não foi possível executar a ação. Verifique o status do chamado."
+  }
+}

@@ -1,7 +1,8 @@
 import client from '@app/db/client';
-import { commonAreas } from '@app/db/schema/reservation';
+import { commonAreas, reservations } from '@app/db/schema/reservation';
 import { sql } from 'drizzle-orm';
 import { commonAreaData } from './commonAreas';
+import { reservationData } from './reservations';
 
 async function clearDb() {
   await client.execute(sql`
@@ -17,6 +18,9 @@ async function seed() {
 
   console.log('Populating common areas...');
   await client.insert(commonAreas).values(commonAreaData);
+
+  console.log('Populating reservations...');
+  await client.insert(reservations).values(reservationData);
 
   console.log('Populate Finished');
 }

@@ -1,8 +1,6 @@
-version: "3"
-
 services:
   db:
-    image: postgres
+    image: postgres:17
     restart: always
     ports:
       - 5432:5432
@@ -24,13 +22,13 @@ services:
       - ./servers.json:/pgadmin4/servers.json
     depends_on:
       - db
-    
+
   minio:
     image: minio/minio:latest
     container_name: minio-emp
     ports:
-      - "9090:9000"
-      - "9001:9001"
+      - '9090:9000'
+      - '9001:9001'
     environment:
       MINIO_ROOT_USER: admin
       MINIO_ROOT_PASSWORD: admin123456

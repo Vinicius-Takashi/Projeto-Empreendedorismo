@@ -7,6 +7,7 @@ import common from './common.json';
 import packages from './packages.json';
 import visitorAccess from './visitorAccess.json';
 import documents from './documents.json';
+import maintenance from './maintenance.json';
 
 export default {
   login,
@@ -19,6 +20,7 @@ export default {
   packages,
   visitorAccess,
   documents,
+  maintenance,
 
   common,
 };

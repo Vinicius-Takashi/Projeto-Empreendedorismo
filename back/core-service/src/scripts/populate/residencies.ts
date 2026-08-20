@@ -11,16 +11,9 @@ export const residencyData: ResidencyInsert[] = [
 
   {
     id: ids.residencies.ap102,
-    groupId: ids.groups.torreA,
+    groupId: ids.groups.torreB,
     code: '102A',
     name: 'Apartamento 102A',
-  },
-
-  {
-    id: ids.residencies.ap201,
-    groupId: ids.groups.torreB,
-    code: '101B',
-    name: 'Apartamento 101B',
   },
 
   {
@@ -32,15 +25,8 @@ export const residencyData: ResidencyInsert[] = [
 
   {
     id: ids.residencies.casa02,
-    groupId: ids.groups.palmeiras,
+    groupId: ids.groups.acacias,
     code: '02',
     name: 'Casa 02',
-  },
-
-  {
-    id: ids.residencies.casa10,
-    groupId: ids.groups.acacias,
-    code: '10',
-    name: 'Casa 10',
   },
 ];

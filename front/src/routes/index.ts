@@ -6,6 +6,7 @@ import {
   Settings as SettingsIcon,
   PackageIcon,
   FileText,
+  Wrench,
 } from 'lucide-react';
 import Home from '../views/Home';
 import Residents from '../views/Residents';
@@ -16,6 +17,7 @@ import Packages from '../views/Packages';
 import VisitorAccess from '../views/VisitorAccess';
 import BuildingSelector from '../views/BuildingSelector.tsx';
 import Documents from '../views/Documents';
+import Maintenance from '../views/Maintenance';
 import type { RouteConfig } from './route';
 
 const routes: RouteConfig[] = [
@@ -75,6 +77,16 @@ const routes: RouteConfig[] = [
     display: {
       labelKey: 'sidebar.routes.documents',
       icon: FileText,
+    },
+  },
+  {
+    path: '/maintenance',
+    viewComponent: Maintenance,
+    layout: 'sidebar',
+    visible: true,
+    display: {
+      labelKey: 'sidebar.routes.maintenance',
+      icon: Wrench,
     },
   },
   {

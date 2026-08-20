@@ -1,0 +1,132 @@
+{
+  "title": "Solicitudes de mantenimiento",
+  "subtitle": "Acompañe solicitudes, responsables y plazos del condominio.",
+  "views": { "tickets": "Solicitudes", "create": "Abrir solicitud" },
+  "fields": {
+    "category": "Categoría",
+    "title": "Título",
+    "description": "Descripción",
+    "location": "Ubicación",
+    "residency": "Unidad",
+    "assignee": "Responsable",
+    "createdAt": "Abierto en",
+    "dueAt": "Plazo",
+    "resolution": "Solución"
+  },
+  "create": {
+    "title": "Describa el problema",
+    "description": "Informe detalles suficientes para que el equipo evalúe y atienda la solicitud.",
+    "titlePlaceholder": "Ej.: Fuga en el fregadero",
+    "descriptionPlaceholder": "Cuente cuándo comenzó y cómo afecta al lugar.",
+    "locationPlaceholder": "Ej.: Cocina, pasillo del segundo piso",
+    "attachment": "Foto o documento opcional",
+    "submitting": "Abriendo solicitud...",
+    "submit": "Abrir solicitud"
+  },
+  "list": {
+    "filter": "Filtrar solicitudes por estado",
+    "allStatuses": "Todos los estados",
+    "empty": "No se encontraron solicitudes.",
+    "residency": "Unidad residencial"
+  },
+  "details": {
+    "select": "Seleccione una solicitud para ver los detalles.",
+    "unassigned": "Sin asignar",
+    "you": "Usted"
+  },
+  "comments": {
+    "title": "Comentarios",
+    "empty": "Todavía no hay comentarios.",
+    "placeholder": "Agregue una actualización...",
+    "internal": "Comentario interno",
+    "internalOption": "Visible solo para el equipo",
+    "submit": "Comentar",
+    "required": "Escriba un comentario antes de enviar."
+  },
+  "attachments": {
+    "title": "Adjuntos",
+    "empty": "No hay adjuntos disponibles.",
+    "submit": "Adjuntar",
+    "required": "Seleccione un archivo antes de enviar."
+  },
+  "history": { "title": "Historial" },
+  "actions": {
+    "title": "Gestionar solicitud",
+    "triage": "Completar evaluación",
+    "selectAssignee": "Seleccione el responsable",
+    "assign": "Asignar",
+    "start": "Iniciar atención",
+    "wait": "Poner en espera",
+    "resolutionPlaceholder": "Describa la solución aplicada",
+    "resolve": "Marcar como resuelto",
+    "close": "Cerrar solicitud",
+    "reopen": "Reabrir solicitud",
+    "cancel": "Cancelar solicitud",
+    "rejectPlaceholder": "Motivo del rechazo",
+    "reject": "Rechazar solicitud"
+  },
+  "status": {
+    "OPEN": "Abierto",
+    "UNDER_REVIEW": "En evaluación",
+    "IN_PROGRESS": "En atención",
+    "WAITING_RESIDENT": "Esperando al residente",
+    "WAITING_VENDOR": "Esperando al proveedor",
+    "WAITING_MATERIAL": "Esperando material",
+    "RESOLVED": "Resuelto",
+    "CLOSED": "Cerrado",
+    "REJECTED": "Rechazado",
+    "CANCELED": "Cancelado"
+  },
+  "priority": { "LOW": "Baja", "NORMAL": "Normal", "HIGH": "Alta", "EMERGENCY": "Emergencia" },
+  "category": {
+    "PLUMBING": "Fontanería",
+    "ELECTRICAL": "Eléctrica",
+    "ELEVATOR": "Ascensor",
+    "CLEANING": "Limpieza",
+    "SECURITY": "Seguridad",
+    "COMMON_AREA": "Área común",
+    "STRUCTURAL": "Estructural",
+    "OTHER": "Otro"
+  },
+  "attachmentType": {
+    "PROBLEM_PHOTO": "Foto del problema",
+    "RESOLUTION_PHOTO": "Foto de la solución",
+    "INVOICE": "Factura",
+    "REPORT": "Informe",
+    "OTHER": "Otro"
+  },
+  "event": {
+    "TICKET_CREATED": "Solicitud abierta",
+    "TICKET_TRIAGED": "Evaluación completada",
+    "TICKET_ASSIGNED": "Responsable asignado",
+    "TICKET_STARTED": "Atención iniciada",
+    "TICKET_WAITING": "Solicitud puesta en espera",
+    "TICKET_RESOLVED": "Solicitud resuelta",
+    "TICKET_CLOSED": "Solicitud cerrada",
+    "TICKET_REOPENED": "Solicitud reabierta",
+    "TICKET_CANCELED": "Solicitud cancelada",
+    "TICKET_REJECTED": "Solicitud rechazada",
+    "COMMENT_ADDED": "Comentario agregado",
+    "INTERNAL_COMMENT_ADDED": "Comentario interno agregado",
+    "ATTACHMENT_ADDED": "Adjunto agregado"
+  },
+  "toast": {
+    "requiredTitle": "Revise los datos",
+    "requiredMessage": "Ingrese título y descripción con al menos tres caracteres.",
+    "createdTitle": "Solicitud abierta",
+    "createdMessage": "La solicitud se registró correctamente.",
+    "createError": "No se pudo abrir la solicitud.",
+    "listError": "No se pudieron cargar las solicitudes.",
+    "detailsError": "No se pudieron cargar los detalles.",
+    "commentTitle": "Comentario agregado",
+    "commentMessage": "La actualización fue registrada.",
+    "commentError": "No se pudo agregar el comentario.",
+    "fileTitle": "Archivo adjunto",
+    "fileMessage": "El archivo se agregó a la solicitud.",
+    "fileError": "No se pudo subir el archivo.",
+    "downloadError": "No se pudo abrir el archivo.",
+    "updatedTitle": "Solicitud actualizada",
+    "updatedMessage": "El estado de la solicitud fue actualizado.",
+    "actionError": "No se pudo completar la acción. Revise el estado de la solicitud."
+  }
+}
